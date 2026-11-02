@@ -1,0 +1,35 @@
+# Kaggle API の認証情報（絶対にコミットしない）
+kaggle.json
+.kaggle/
+access_token
+
+# データ・出力（中身は Git 管理外、フォルダだけ残す）
+data/*
+!data/.gitkeep
+submissions/*
+!submissions/.gitkeep
+models/*
+!models/.gitkeep
+
+# 学習済みモデル
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.joblib
+*.h5
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 秘密情報
+.env
+
+# OS
+Thumbs.db
+.DS_Store
